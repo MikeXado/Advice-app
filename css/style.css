@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #323a49;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 15px 0 15px;
+}
+
+.quote-card {
+  background-color: #4e5d73;
+  max-width: 100%;
+  width: 540px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 34px 45px 14px 80px rgba(24, 37, 57, 0.1), 30px 55px 14px 20px rgba(24, 37, 57, 0.11), 40px 60px 14px -20px rgba(24, 37, 57, 0.12), 30px 60px 14px -45px rgba(24, 37, 57, 0.2);
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice-text {
+  color: #52ffa8;
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+.quote-container {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 45px;
+  margin-top: 15px;
+  color: #cee3e9;
+  font-size: "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 520.98px) {
+  .quote-container {
+    font-size: 22px;
+  }
+
+  .advice-text {
+    font-size: 6px;
+  }
+}
+.loader {
+  display: none;
+  margin: 20px auto;
+  border: 5px solid #cee3e9;
+  /* Light grey */
+  border-top: 5px solid #323a49;
+  /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pattern-divider {
+  margin: 30px 0 35px 0;
+}
+@media screen and (max-width: 520.98px) {
+  .pattern-divider .img-pattern-desktop {
+    display: none;
+  }
+  .pattern-divider .img-pattern-mobile {
+    display: flex;
+  }
+}
+
+.img-pattern-mobile {
+  display: none;
+  justify-content: center;
+}
+.img-pattern-mobile img {
+  width: 80%;
+}
+
+.quote-button {
+  position: absolute;
+  bottom: -30px;
+  background-color: #52ffa8;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.quote-button a {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.quote-button:hover {
+  box-shadow: 0px 0px 33px 20px rgba(82, 255, 168, 0.44);
+}
+
+/*# sourceMappingURL=style.css.map */

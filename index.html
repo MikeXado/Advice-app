@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <title>Advice generator app</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="quote-card">
+        <div class="card-content">
+          <div class="advice-text">
+            <h1>Advice #<span class="advice-nr">0</span></h1>
+          </div>
+          <div class="quote-container">
+            <div class="quote-text"><span class="quote"></span></div>
+            <div class="loader"></div>
+          </div>
+          <div class="pattern-divider">
+            <div class="img-pattern-desktop">
+              <img src="images/pattern-divider-desktop.svg" alt="desktop">
+            </div>
+
+            <div class="img-pattern-mobile">
+              <img src="images/pattern-divider-mobile.svg" alt="mobile">
+            </div>
+          </div>
+
+          <div class="quote-button" onclick="showAdvice()">
+            <a href="#" class="button"><img src="images/icon-dice.svg" alt="icon-dice"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
